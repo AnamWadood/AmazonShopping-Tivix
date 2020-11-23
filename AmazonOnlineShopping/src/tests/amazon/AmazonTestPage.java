@@ -60,7 +60,7 @@ obj2.verifyShoeNameAndSize();
 public void closeBrowser() {
 	//To close the newly opened tab
     driver.close();
-    // To close the main tab
+    //To close the main tab
     driver.quit();
     System.out.println("The process is completed");
 

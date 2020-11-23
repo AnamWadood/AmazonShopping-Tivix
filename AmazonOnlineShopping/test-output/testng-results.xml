@@ -1,21 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58892" started-at="2020-11-21T19:05:56Z" finished-at="2020-11-21T19:06:55Z">
+  <suite name="Default suite" duration-ms="49115" started-at="2020-11-23T10:15:36Z" finished-at="2020-11-23T10:16:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58892" started-at="2020-11-21T19:05:56Z" finished-at="2020-11-21T19:06:55Z">
+    <test name="Default test" duration-ms="49115" started-at="2020-11-23T10:15:36Z" finished-at="2020-11-23T10:16:25Z">
       <class name="tests.amazon.AmazonTestPage">
-        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:tests.amazon.AmazonTestPage@1686d1f]" name="launchWebsite" is-config="true" duration-ms="18597" started-at="2020-11-22T00:35:56Z" finished-at="2020-11-22T00:36:15Z">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:tests.amazon.AmazonTestPage@1686d1f]" name="launchWebsite" is-config="true" duration-ms="12034" started-at="2020-11-23T15:45:36Z" finished-at="2020-11-23T15:45:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchWebsite -->
-        <test-method status="PASS" signature="shoeSelection()[pri:0, instance:tests.amazon.AmazonTestPage@1686d1f]" name="shoeSelection" duration-ms="38934" started-at="2020-11-22T00:36:15Z" finished-at="2020-11-22T00:36:54Z">
+        <test-method status="FAIL" signature="shoeSelection()[pri:0, instance:tests.amazon.AmazonTestPage@1686d1f]" name="shoeSelection" duration-ms="36992" started-at="2020-11-23T15:45:48Z" finished-at="2020-11-23T15:46:25Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.66)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'TOSHIBA-PC', ip: '192.168.43.82', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54971}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a7ded504fbc3ab10a981dc945b55787b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=87.0.4280.66)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'TOSHIBA-PC', ip: '192.168.43.82', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Toshiba\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54971}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a7ded504fbc3ab10a981dc945b55787b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:311)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:116)
+	at pageobjects.amazonpages.ShoeDetailsPage.selectQuantity(ShoeDetailsPage.java:62)
+	at tests.amazon.AmazonTestPage.shoeSelection(AmazonTestPage.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- shoeSelection -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.amazon.AmazonTestPage@1686d1f]" name="closeBrowser" is-config="true" duration-ms="1294" started-at="2020-11-22T00:36:54Z" finished-at="2020-11-22T00:36:55Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.amazon.AmazonTestPage@1686d1f]" name="closeBrowser" is-config="true" duration-ms="14" started-at="2020-11-23T15:46:25Z" finished-at="2020-11-23T15:46:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

@@ -33,8 +33,8 @@ WebDriver driver;
 	@FindBy(how=How.CSS, css="span[class='a-size-base-plus a-color-base']")
 	List<WebElement> filterResultsCheck;
 	
-	@FindBy(how=How.XPATH, xpath="//span[contains(text(),'Micam-114')]")
-	WebElement specificMicam114Shoe;
+	@FindBy(how=How.XPATH, xpath="//span[contains(text(),'Vega-3')]")
+	WebElement specificShoe;
 	
 	
 	public ShoeListPage(WebDriver driver) throws Exception {
@@ -118,22 +118,8 @@ public boolean verifyShoeSearchResults() throws Exception {
 			
 		}
 	
-	//Method to verify that results are appearing as per the two filter values selected
-	//public boolean verifyFilterResults() {
-		
-		//String filterText=filterResultsCheck.getText();
-		//String filter="Red Tape";
-		//if(filterText.contains(filter))			
-		//  {
-		//	System.out.println("Page has results of Shoes according to applied filter");
-	    //	return true;
-	   // }
-		//System.out.println("Page does not have results of Shoes showing at the top of the page");
-	  //  return false;
-
-	//}
 	
-	
+//Method to verify the results appear according to selected brand filters	
 public boolean verifyFilterResults() {
 		for(WebElement element : filterResultsCheck)	{
 			String filterName= element.getText();
@@ -152,8 +138,8 @@ public boolean verifyFilterResults() {
 
 	//Method to click on the Shoe of our choice
 		public void clickonShoe() throws Exception {
-			specificMicam114Shoe.click();
-			System.out.println("Womens Micam- 114 Shoe is selected to be bought");
+			specificShoe.click();
+			System.out.println("Men's Vega-3 Shoe is selected to be bought");
 				
 			
 

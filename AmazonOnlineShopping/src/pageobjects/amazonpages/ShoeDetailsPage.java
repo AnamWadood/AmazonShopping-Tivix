@@ -104,12 +104,12 @@ WebDriver driver;
 		
 		
 		
-		//Verifying the Shoes name ans size that was selected on the previous page is same or not.
+		//Verifying the Shoes name and size that was selected on the previous page is same or not.
 		
 		public boolean verifyShoeNameAndSize() throws Exception {
 				
 			String text=shoeNameTextAndSize.getText();
-			String shoeTitle="Bourge Women's Micam-114 Red Running Shoes-8 UK (40 EU) (9 US) (Micam-114-08)";
+			String shoeTitle="Bourge Men's Vega-3 R.Blue Running Shoes-8 UK/India (42 EU) (Vega-3-R.Blue-08)";
 			if(text.contains(shoeTitle))			
 			  {
 				System.out.println("Shoe name and Size is same as selected on previous page");
