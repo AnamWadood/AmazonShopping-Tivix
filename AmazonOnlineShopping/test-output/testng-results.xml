@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="58892" started-at="2020-11-21T19:05:56Z" finished-at="2020-11-21T19:06:55Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="58892" started-at="2020-11-21T19:05:56Z" finished-at="2020-11-21T19:06:55Z">
+      <class name="tests.amazon.AmazonTestPage">
+        <test-method status="PASS" signature="launchWebsite()[pri:0, instance:tests.amazon.AmazonTestPage@1686d1f]" name="launchWebsite" is-config="true" duration-ms="18597" started-at="2020-11-22T00:35:56Z" finished-at="2020-11-22T00:36:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchWebsite -->
+        <test-method status="PASS" signature="shoeSelection()[pri:0, instance:tests.amazon.AmazonTestPage@1686d1f]" name="shoeSelection" duration-ms="38934" started-at="2020-11-22T00:36:15Z" finished-at="2020-11-22T00:36:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shoeSelection -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.amazon.AmazonTestPage@1686d1f]" name="closeBrowser" is-config="true" duration-ms="1294" started-at="2020-11-22T00:36:54Z" finished-at="2020-11-22T00:36:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.amazon.AmazonTestPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
